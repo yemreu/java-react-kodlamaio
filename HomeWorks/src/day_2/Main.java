@@ -1,7 +1,5 @@
 package day_2;
 
-import java.util.Iterator;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class Main {
 		Course[] courses = {javaReact};
 		
 		for (Course course : courses) {
-			System.out.println(course.id + ". " + course.name);
+			System.out.println(course.id + ". " + course.name + " by " + course.instructor.name);
 		}
 		
 		System.out.println();
