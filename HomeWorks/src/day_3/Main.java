@@ -49,7 +49,7 @@ public class Main {
 		
 		System.out.println();
 		
-		courseManager.enrollInCourse(javaReact, emre);
+		courseManager.enrollInACourse(javaReact, emre);
 		
 		System.out.println();
 		
