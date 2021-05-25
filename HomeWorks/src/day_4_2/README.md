@@ -4,7 +4,7 @@ Bu yayın C# ile yapıldı.
 
 Aynı yapıyı Java için kurunuz.  
 
-#Senaryo
+# Senaryo
 
 * Kahve dükkanları için müşteri yönetimi yapan bir sistem kurmak istiyoruz.
 * Starbucks ve Nero firması için çalışıyoruz.
