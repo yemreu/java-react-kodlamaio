@@ -3,10 +3,12 @@ package day_4_3;
 import java.time.LocalDate;
 
 import day_4_3.Abstract.UserManager;
+import day_4_3.Concrete.CampaignManager;
 import day_4_3.Concrete.GameManager;
 import day_4_3.Concrete.MarketManager;
 import day_4_3.Concrete.PlayerCheckManager;
 import day_4_3.Concrete.PlayerManager;
+import day_4_3.Entities.Campaign;
 import day_4_3.Entities.Game;
 import day_4_3.Entities.User;
 
@@ -28,8 +30,18 @@ public class Main {
 		marketManager.addToMarket(gta5);
 		marketManager.addToMarket(ets2);
 		
+		CampaignManager campaignManager = new CampaignManager(marketManager);
+		Campaign summerSale = new Campaign(1, "Summer Sale", LocalDate.of(2021, 5, 27), LocalDate.of(2021,6,27), 50);
+		
 		marketManager.buyAGame(ets2, emre);
 		
+		campaignManager.createCampaign(summerSale);
+		
+		marketManager.buyAGame(ets2, emre);
+		
+		campaignManager.deleteCampaign(summerSale);
+		
+		marketManager.buyAGame(ets2, emre);		
 	}
 
 }
